@@ -1,0 +1,23 @@
+body {
+    background-color: floralwhite;
+
+    .container {
+        margin-left: 20px;
+        color: rebeccapurple;
+
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+    }
+}
