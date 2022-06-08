@@ -23,3 +23,5 @@ Route::view('about', 'about');
 Route::view('contacts', 'contacts');
 Route::get('under_control', [\App\Http\Controllers\Home::class, 'soon'])->name('404');
 Route::post('subscribe', [\App\Http\Controllers\Home::class, 'subscribe'])->name('subscribe');
+
+
