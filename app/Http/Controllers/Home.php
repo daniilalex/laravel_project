@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateSubscribeReq;
+use App\Models\Subscriber;
+use Illuminate\Support\Facades\Redirect;
 
-class HomeController extends Controller
+class Home extends Controller
 {
     public function soon()
     {
@@ -14,7 +16,9 @@ class HomeController extends Controller
     public function subscribe(CreateSubscribeReq $request)
     {
         $data = $request->validated();
-
+        Subscriber::create($data);
+       
+        return Redirect::back()->with('message', 'Successfully added');
     }
 }
 
