@@ -11,7 +11,9 @@
 <body>
 <div class="container">
     <h1>Welcome to carwash "NEMO"</h1>
-    <a href="{{ route('404') }}">Under Construction</a>
+    <a href="{{ route('404') }}">Under Construction</a><br>
+    <a href="{{ route('services.index') }}">Services</a><br>
+    <a href="{{ route('services.create') }}">Add Service</a>
 </div>
 </body>
 </html>
